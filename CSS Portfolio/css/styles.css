@@ -1,0 +1,73 @@
+/* Color Palette
+*
+*   #FFDEAD - Navajo White      (Tan)
+*   #0A0908 - Rich Black FOGRA  (Black)
+*   #22333B - Gunmetal          (Navy Blue)
+*   #CC668F - Cinnamon Satin    (Pink)
+*   #558C8C - Steel Teal        (Teel)
+*
+*/ 
+
+/* Global styles
+------------------------------------*/
+body {
+    color: #0A0908; 
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: #CC668F; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Profile
+------------------------------------*/
+header {
+    background: #FFDEAD;
+}
+
+/* Projects
+------------------------------------*/
+.projects {
+    background: #0A0908;
+    color: whitesmoke;
+}
+
+.projects a{
+    color: whitesmoke;
+}
+
+.projects .btn{
+    color: whitesmoke;
+    background: #22333B;
+    text-decoration: none; 
+    padding: 8px;
+    border-radius: 4px;  
+}
+
+.projects .btn:hover{
+    background: rgba(34, 51, 59, 80%);
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+    background: #22333B; 
+    color: whitesmoke;
+}
+
+/* Education
+------------------------------------*/
+
+/* Contact Info
+------------------------------------*/
+footer {
+   background: #0A0908; 
+   color: whitesmoke;
+}
