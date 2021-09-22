@@ -66,6 +66,7 @@ h2 {
 ------------------------------------*/
 header {
     background: #FFDEAD;
+    text-align: center; 
 }
 
 /* Projects
@@ -115,6 +116,13 @@ header {
     color: whitesmoke;
 }
 
+.job-item{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
+
 /* Education
 ------------------------------------*/
 .education {
@@ -127,5 +135,19 @@ header {
 ------------------------------------*/
 footer {
    background: #FFDEAD; 
+   text-align: center;
    
+}
+
+.contact-list{
+    padding: 0;                     /*Removes Default Space*/
+    list-style-type: none;          /*Removes Bullet Points*/
+
+    display: flex;                  /*Enables the Flexbox Display*/
+    justify-content: center;        /*Justifies Content to be Centered inside the box*/
+}
+
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
 }
