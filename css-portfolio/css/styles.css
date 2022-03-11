@@ -1,0 +1,119 @@
+/* Color Palette
+*
+*   #FFDEAD - Navajo White      (Tan)
+*   #0A0908 - Rich Black FOGRA  (Black)
+*   #22333B - Gunmetal          (Navy Blue)
+*   #CC668F - Cinnamon Satin    (Pink)
+*   #80FFFF - Steel Teal        (Teel)
+*
+*   whitesmoke for Text!   
+*/
+
+/* Global styles
+------------------------------------*/
+* {
+  text-align: justify;
+}
+
+body {
+  color: #0a0908; /*Sets text color of entire body to black*/
+  margin: 0; /*Sets margin of entire body to '0'*/
+  padding: 0; /*Sets padding of entire body to '0'*/
+  font-family: "Roboto", sans-serif; /*Sets all of the text to have a base fontface of 'Roboto'*/
+  line-height: 1.5; /*Sets the height of each line of text to be 1.5x the size of the font. */
+}
+
+img {
+  width: 300px;
+}
+
+a {
+  color: #22333b;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0; /*Sets the margin of all h1 elements to '0'. Removes extra Top/Bottom spacing*/
+  line-height: 1; /*Sets the line height for 'h1' elements back to 1, reducing space in content box.*/
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0; /*Sets the margin of all h2 elements to '0'. Removes extra Top/Bottom spacing*/
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Quicksand", sans-serif; /*Sets The headings to have fontface of 'quicksand'*/
+}
+
+/* section-content-wrapper
+
+  Wrap a sections content with <div class="section-content-wrapper"></div>
+  to apply alignment styles to that section. 
+
+------------------------------------*/
+.section-content-wrapper {
+  width: 800px; /* Content box has 900px width  */
+  padding: 60px 0; /* Top/Bottom padding is '60px' Left.Right padding is '0'. This expands the container so the content inside has extra space. */
+  margin: 0 auto; /* Top/Bottom margin is '0' w/ Left/Right margin split(centered)*/
+}
+
+/* Profile
+------------------------------------*/
+header {
+  background-color: #ffdead;
+  color: #0a0908;
+}
+
+/* Projects
+------------------------------------*/
+.projects {
+  background-color: #0a0908;
+  color: whitesmoke;
+}
+
+.projects a {
+  color: #aaa;
+}
+
+.projects .btn {
+  background-color: #22333b;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 8px;
+  text-decoration: none;
+
+  display: inline-block; /*changes behavior of .btn so margin and padding align like block elements with inline spacing*/
+}
+
+.projects .btn:hover {
+  background: rgba(34, 51, 59, 80%);
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background-color: #ffdead;
+  color: #0a0908;
+}
+
+/* Education
+------------------------------------*/
+.education {
+  background-color: #0a0908;
+  color: whitesmoke;
+}
+/* Contact Info
+------------------------------------*/
+footer {
+  background-color: #ffdead;
+  color: #0a0908;
+}
