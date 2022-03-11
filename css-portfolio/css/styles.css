@@ -15,6 +15,18 @@
   text-align: justify;
 }
 
+/* Box Model Fix Code
+Sets the box-sizing property to border-box which counts padding and margin into the declared width and height. 
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   color: #0a0908; /*Sets text color of entire body to black*/
   margin: 0; /*Sets margin of entire body to '0'*/
@@ -96,6 +108,21 @@ header {
 
 .projects .btn:hover {
   background: rgba(34, 51, 59, 80%);
+}
+
+.project-item {
+  border-bottom: 1px dashed whitesmoke;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.project-item img {
+  float: left;
+  margin-right: 16px;
+}
+
+.project-item h3 {
+  margin-top: 0;
 }
 
 /* Work Experience
