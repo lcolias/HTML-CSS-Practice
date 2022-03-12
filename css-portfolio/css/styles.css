@@ -17,6 +17,7 @@
 
 /* Box Model Fix Code
 Sets the box-sizing property to border-box which counts padding and margin into the declared width and height. 
+This code snippet sets the border-box value for ALL ELEMENTS!
 ------------------------------------*/
 html {
   box-sizing: border-box;
@@ -110,19 +111,21 @@ header {
   background: rgba(34, 51, 59, 80%);
 }
 
+/* Practice with floats using each project item as a container, and floating the images to the left. 
+------------------------------------*/
 .project-item {
   border-bottom: 1px dashed whitesmoke;
-  overflow: hidden;
-  padding: 16px;
+  overflow: hidden; /*Uses the 'overflow: hidden' clear fix to clear the float*/
+  padding: 16px; /*Sets padding to make more room for border*/
 }
 
 .project-item img {
-  float: left;
-  margin-right: 16px;
+  float: left; /*Floats the image element to the left side of its container. */
+  margin-right: 16px; /*Adds some space around the right of images*/
 }
 
 .project-item h3 {
-  margin-top: 0;
+  margin-top: 0; /*Lines up h3 elements in projects items to match the top of the images.*/
 }
 
 /* Work Experience
