@@ -147,3 +147,18 @@ footer {
   background-color: #ffdead;
   color: #0a0908;
 }
+
+/* Flexbox Containter class
+This container class sets list of contact links at the bottom to a Flexbox Layout.
+------------------------------------*/
+.contact-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list a {
+  padding: 16px;
+  display: inline-block;
+}
