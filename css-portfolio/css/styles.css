@@ -11,21 +11,21 @@
 
 /* Global styles
 ------------------------------------*/
-* {
-  text-align: justify;
-}
 
-/* Box Model Fix Code
+/* 
+-Box Model Fix Code
 Sets the box-sizing property to border-box which counts padding and margin into the declared width and height. 
 This code snippet sets the border-box value for ALL ELEMENTS!
-------------------------------------*/
+*/
 html {
   box-sizing: border-box;
+  text-align: justify;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+  text-align: inherit;
 }
 
 body {
@@ -61,22 +61,54 @@ h2 {
   margin: 0; /*Sets the margin of all h2 elements to '0'. Removes extra Top/Bottom spacing*/
 }
 
+h3 {
+  margin-bottom: 0; /*sets bottom margin of all he elements to '0'*/
+}
+
 h1,
 h2,
 h3 {
   font-family: "Quicksand", sans-serif; /*Sets The headings to have fontface of 'quicksand'*/
 }
 
-/* section-content-wrapper
-
+/* 
+-section-content-wrapper
   Wrap a sections content with <div class="section-content-wrapper"></div>
   to apply alignment styles to that section. 
-
-------------------------------------*/
+*/
 .section-content-wrapper {
-  width: 800px; /* Content box has 900px width  */
+  max-width: 800px; /* Content box has a 800px max-width.*/
+  width: 85%; /*Sets default value to be 85% of the viewport*/
   padding: 60px 0; /* Top/Bottom padding is '60px' Left.Right padding is '0'. This expands the container so the content inside has extra space. */
   margin: 0 auto; /* Top/Bottom margin is '0' w/ Left/Right margin split(centered)*/
+}
+
+/*
+-Combinators
+Sets up some global styles using combinators for more advanced selections.  
+Adding an Item-detail class, we can specify which sections of the webpage we want to apply the styles to
+*/
+
+.item-details h3 + p {
+  /*Adjacent sibling selector, selects <p> direclty after <h3>*/
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+  /*General sibling selector, selects ALL <p> directly after <h3> */
+  margin: 0;
+}
+
+.divider > section {
+  /*Child combinator, selects ALL of the <section> elements that are directly contained in a 'divider'*/
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  padding: 16px; /*Sets padding to make more room for border*/
+}
+
+.divider > section:last-of-type {
+  /*The last-of-type psuedo-selector is used to remove the bottom border of the last section type element contained within a 'divider'*/
+  border-bottom-style: none;
 }
 
 /* Profile
@@ -111,12 +143,12 @@ header {
   background: rgba(34, 51, 59, 80%);
 }
 
-/* Practice with floats using each project item as a container, and floating the images to the left. 
-------------------------------------*/
+/* 
+-Floats
+Practice with floats using each project item as a container, and floating the images to the left. 
+*/
 .project-item {
-  border-bottom: 1px dashed whitesmoke;
   overflow: hidden; /*Uses the 'overflow: hidden' clear fix to clear the float*/
-  padding: 16px; /*Sets padding to make more room for border*/
 }
 
 .project-item img {
@@ -135,12 +167,47 @@ header {
   color: #0a0908;
 }
 
+/* 
+-Grid Container Class
+Sets up a Grid Layout container for the Job details and Job summary associated with past work experience
+*/
+.job-container {
+  display: grid; /*Sets layout to grid*/
+  grid-template-columns: 1fr 2fr; /*Sets the explicit grid to have a two columns with a 1 to 2 fractional ratio.*/
+  column-gap: 16px;
+}
+
+/* 
+-Grid Item classes
+Sets up a grid items inside of the grid
+*/
+.job-details {
+  text-align: left;
+}
+
+.job-summary {
+}
+
 /* Education
 ------------------------------------*/
 .education {
   background-color: #0a0908;
-  color: whitesmoke;
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  color: #0a0908;
+  padding-bottom: 100px;
 }
+
+.education p {
+  width: 60%;
+  line-height: 1;
+}
+
+.education p:first-of-type {
+  margin-bottom: 8px;
+}
+
 /* Contact Info
 ------------------------------------*/
 footer {
@@ -148,9 +215,10 @@ footer {
   color: #0a0908;
 }
 
-/* Flexbox Containter class
+/* 
+-Flexbox Containter class
 This container class sets list of contact links at the bottom to a Flexbox Layout.
-------------------------------------*/
+*/
 .contact-list {
   display: flex;
   justify-content: center;
@@ -161,4 +229,14 @@ This container class sets list of contact links at the bottom to a Flexbox Layou
 .contact-list a {
   padding: 16px;
   display: inline-block;
+}
+
+/* Responsive 
+------------------------------------*/
+@media screen and (max-width: 800px) {
+  /*Creates a media queiry on all screen devices with a maximum width of 800px*/
+
+  .project-item img {
+    float: none; /*Removes float on image pictures when screen is too small */
+  }
 }

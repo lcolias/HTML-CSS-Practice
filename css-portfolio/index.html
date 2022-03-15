@@ -24,7 +24,7 @@
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="projects">
-        <div class="section-content-wrapper">
+        <div class="section-content-wrapper divider">
           <h2>Featured Projects</h2>
           <p>View selected projects below. More information can be found at my <a href="https://github.com/lcolias">github</a>.</p>
 
@@ -68,32 +68,40 @@
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section class="work-experience">
-        <div class="section-content-wrapper">
+        <div class="section-content-wrapper item-details divider">
           <h2>Work Experience</h2>
           <p>Most of my professional programming career has taken place at Lutiya, a startup company that specializes in smart city solutions. The company was started by a professor at CSULB who offered me an internship with his company after I completed an optional semester-long work-study for his Networking and Distributed Systems class. The internship lasted for the better part of 6 months.</p>
           <p>I have also worked for a small logistics company for approximately 6 years to financially put myself through college. I routinely swap into the role of shift leader when our manager is out giving quotes or securing contracts.</p>
           <!-- Copy this whole <section> block to add more jobs. -->
-          <section>
-            <h3>Software Engineer | Internship</h3>
-            <p><a href="https://www.lutiya.com/" target="_blank">Lutiya</a></p>
-            <p>1/2021 - 6/2021</p>
-            <p>Developed C++ code for an experimental monitoring system that collects water quality data for a
-              local water utility. The data was transferred via a TCP socket to a C++ server that ran on Google
-              Cloud with CentOS 7 as the operating system. The server analyzed water quality data for anomalies
-              in several different water quality parameters and sent all data to a MongoDB database. Our team
-              decided to evolve our communication protocol to MQTT for its IoT support and I was given the
-              responsibility of updating the codebase. After the development of the monitoring system, I learned
-              web development with JavaScript and the Angular framework. I worked on the companies Smart
-              City web application, integrating the water quality monitoring project into the application.</p>
+          <section class="job-container">
+            <div class="job-details">
+              <h3>Software Engineer Intern</h3>
+              <p><a href="https://www.lutiya.com/" target="_blank">Lutiya</a> | Long Beach, CA</p>
+              <p>1/2021 - 6/2021</p>
+            </div>
+            <div class="job-summary">
+              <p>Developed C++ code for an experimental monitoring system that collects water quality data for a
+                local water utility. The data was transferred via a TCP socket to a C++ server that ran on Google
+                Cloud with CentOS 7 as the operating system. The server analyzed water quality data for anomalies
+                in several different water quality parameters and sent all data to a MongoDB database. Our team
+                decided to evolve our communication protocol to MQTT for its IoT support and I was given the
+                responsibility of updating the codebase. After the development of the monitoring system, I learned
+                web development with JavaScript and the Angular framework. I worked on the companies Smart
+                City web application, integrating the water quality monitoring project into the application.</p>
+            </div>
           </section>
           
-          <section>
-            <h3>Logistic Specialist</h3>
-            <p>M2 Moving</p>
-            <p>2016 - 2022</p>
-            <p>Provided logistical assistance to clients, both residential and business. Managed teams up to five
-              using the most efficient methods of logistical transportation to keep the clients merchandise safe as
-              well as keeping my team motivated.</p>
+          <section class="job-container">
+            <div class="job-details">
+              <h3>Logistic Specialist</h3>
+              <p>M2 Moving | Fullerton, CA</p>
+              <p>2016 - 2022</p>
+            </div>
+            <div class="job-summary">
+              <p>Provided logistical assistance to clients, both residential and business. Managed teams up to five
+                using the most efficient methods of logistical transportation to keep the clients merchandise safe as
+                well as keeping my team motivated.</p>
+            </div>
           </section>
         </div>
       <!-- End of work experience block. -->
@@ -101,19 +109,19 @@
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section class="education">
-        <div class="section-content-wrapper">
+        <div class="section-content-wrapper item-details">
           <h2>Education</h2>
 
           <!-- Copy this whole <section> block to add more schools. -->
           <section>
             <h3>California State University of Long Beach - Long Beach, CA</h3>
-            <p>Bachelor of Science - Computer Science, 2019-21</p>
+            <p>Bachelor of Science - Computer Science, 2018-21</p>
             <p>General Education in the field of Computer Science. Focused on the core education cirriculum </p>
           </section>
                   
           <section>
             <h3>Mount San Antionio College - Walnut, CA</h3>
-            <p>Associate of Science for Transfer - Mathematics, 2014-18</p>
+            <p>Associate of Science for Transfer - Mathematics, 2014-17</p>
             <p>Completed the transfer requirements for students going to engineering college.</p>
           </section>
 
