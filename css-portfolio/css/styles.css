@@ -69,6 +69,7 @@ h1,
 h2,
 h3 {
   font-family: "Quicksand", sans-serif; /*Sets The headings to have fontface of 'quicksand'*/
+  text-align: left;
 }
 
 /* 
@@ -236,7 +237,37 @@ This container class sets list of contact links at the bottom to a Flexbox Layou
 @media screen and (max-width: 800px) {
   /*Creates a media queiry on all screen devices with a maximum width of 800px*/
 
+  h1 {
+    font-size: 3em;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h1,
+  h2 {
+    line-height: 1;
+  }
+
   .project-item img {
     float: none; /*Removes float on image pictures when screen is too small */
+    margin: auto;
+    margin-bottom: 16px;
+    display: block;
+    width: 60%;
+  }
+
+  .job-container {
+    display: inline-block; /*Removes grid layout and sets the content to be inline block.*/
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact-list {
+    display: inline-block;
+  }
+
+  .contact-list a {
+    padding: 4px;
   }
 }
