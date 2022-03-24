@@ -232,6 +232,10 @@ This container class sets list of contact links at the bottom to a Flexbox Layou
   display: inline-block;
 }
 
+.visitor-count {
+  text-align: center;
+}
+
 /* Responsive 
 ------------------------------------*/
 @media screen and (max-width: 800px) {
@@ -259,6 +263,11 @@ This container class sets list of contact links at the bottom to a Flexbox Layou
 
   .job-container {
     display: inline-block; /*Removes grid layout and sets the content to be inline block.*/
+  }
+
+  .education {
+    text-align: left;
+    background-position: left;
   }
 }
 
